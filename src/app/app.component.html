@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row text-center">
+    <div class="media">
+      <span class="media-left">
+          <img src="./../assets/angular.png" alt="A" style="height:50px">
+      </span>
+      <div class="media-body">
+          <h1 class="media-heading">ngular Pipes Workshop</h1>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <div id="accordion" class="panel-group">
+    <app-entry title = "Lower Case Pipe" ></app-entry>
+    <app-entry title = "Upper Case Pipe"></app-entry>
+    <app-entry title = "Title Case Pipe"></app-entry>
+    <app-entry title = "Slice Pipe"></app-entry>
+    <app-entry title = "Decimal Pipe"></app-entry>
+    <app-entry title = "Percent Pipe"></app-entry>
+    <app-entry title = "Currency Pipe"></app-entry>
+    <app-entry title = "Date Pipe"></app-entry>
+    <app-entry title = "JSON Pipe"></app-entry>
+    <app-entry title = "Key Value Pipe"></app-entry>
+    <app-entry title = "I18nSelectPipe"></app-entry>
+    <app-entry title = "I18nPluralPipe"></app-entry>
+    <app-entry title = "Async Pipe"></app-entry>
+    <app-entry title = "Custom Pipe"></app-entry>
+    <div class="panel">
+      <div class="panel-heading">
+      <h4 class="panel-title">
+        <a href="#ImpureTest" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">Impure Test</a>
+        </h4>
+      </div>
+      <div id="ImpureTest" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <ul>
+          <li *ngFor="let user of users | impureTest:'age'">
+            {{ user.name }} - {{ user.age }}
+          </li>
+        </ul>
+        <button class="btn btn-primary" (click)="addUser()">Add Queen</button>
+      </div>
+      </div>
+    </div>
+    <app-exercise></app-exercise>
+  </div>
+</div>

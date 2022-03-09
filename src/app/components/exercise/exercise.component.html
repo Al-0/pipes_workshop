@@ -1,0 +1,42 @@
+<div class="panel">
+    <div class="panel-heading">
+        <h4 class="panel-title">
+          <a href="#Exercise" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion">Exercise</a>
+          </h4>
+        </div>
+        <div id="Exercise" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <h1>With the text provided, use the pipes we've learned to make both texts match. Make your changes in the upper text.</h1>
+          <hr>
+          <div>
+            <p>
+              {{ salute }}<br>
+              {{ introduction }}, with all the time that has passed, I think it has been around {{ age }} years now if my memory serves me correctly? As I write this, today is {{ today }}.<br>
+              I was going through some old things I had in storage and came across our old school {{ items }}. I was flipping through the pages when I came across your photo, which had a quote in french: "{{ "fr" }}".<br>
+              My little trip down memory lane made me wonder what you have been up to all these years, where are you living now and what has life brought to you after {{ emotion }}?<br>
+              Are you married? Any children? I am now living in {{ usCapital }} with my partner {{ partnerName }} and we have been married {{ yearsMarried }} years now.<br>
+              On the work front, I am a web developer with a six figure salary! (something around {{ money }}). <br>
+              What about you? Tell me a little about what you are doing! I have enclosed some current photos of my cat!, if you have any recent photos I would love to see them! I'm {{ hype }} hoping to hear back from you, really looking forward to learning all about what you have been up to and where you have been all this time!<br>
+              All the best, {{ name }}.<br>
+              <img [src]="url">
+            </p>
+          </div>
+          <br>
+          <hr>
+          <br>
+          <div class="exercise">
+            <p>
+              {{ salute | titlecase}}<br>
+              {{ introduction | slice:0:37 }}, with all the time that has passed, I think it has been around {{ age | number:'.0-0' }} years now if my memory serves me correctly? As I write this, today is {{ today | date:'mediumDate' }}.<br>
+              I was going through some old things I had in storage and came across our old school {{ items | slice:2:3 }}. I was flipping through the pages when I came across your photo, which had a quote in french: "{{ "fr" | i18nSelect:translations }}".<br>
+              My little trip down memory lane made me wonder what you have been up to all these years, where are you living now and what has life brought to you after {{ emotion | lowercase }}?<br>
+              Are you married? Any children? I am now living in {{ usCapital | uppercase }} with my partner {{ partnerName | titlecase }} and we have been married {{ yearsMarried | number:'.0-1' }} years now.<br>
+              On the work front, I am a web developer with a six figure salary! (something around {{ money | currency:'EUR':'symbol':'':'en' }}). <br>
+              What about you? Tell me a little about what you are doing! I have enclosed some current photos of my cat!, if you have any recent photos I would love to see them! I'm {{ hype | percent }} hoping to hear back from you, really looking forward to learning all about what you have been up to and where you have been all this time!<br>
+              All the best, {{ name | titlecase}}.<br>
+              <img [src]="url | async">
+            </p>
+          </div>
+        </div>
+    </div>
+</div>
