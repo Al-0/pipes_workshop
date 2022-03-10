@@ -18,24 +18,24 @@ export class EntryComponent implements OnInit {
 
 
   // Mainly intended for the user to fill
-  name: string = 'Alfonso Valenciana';
-  sentence: string = 'Mi mAMá mE mImA';
-  fruits: string[] = ['pear', 'grape', 'pineapple', 'strawberry', 'cucumber'];
-  human_population: number = 7932079431;
-  e: number = Math.E;
-  savings: number = .25766;
-  salary: number = 24090.54;
+  name: string = ' ';
+  sentence: string = '';
+  fruits: string[] = [];
+  human_population: number = 0;
+  e: number = 0;
+  savings: number = 0;
+  salary: number = 0;
   today: Date = new Date();
   employee: any = {
-    id: 32,
-    name: 'Alfonso Valenciana',
-    role: 'Apprentice',
-    email: 'alfonso.valenciana@encora.com',
+    id: 0,
+    name: '',
+    role: '',
+    email: '',
     address: {
-      street: 'Desierto de Libia',
-      number: 84
+      street: '',
+      number: 0
     },
-    stacks: ['Angular', 'React', 'Python']
+    stacks: []
   };
 
 

@@ -16,283 +16,50 @@
                 </thead>
                 <tbody>
                     <ng-container *ngIf="_title === 'Lower Case Pipe'">
-                        <tr>
-                            <td>{{ name }}</td>
-                            <td> lowercase </td>
-                            <td>{{ name | lowercase }}</td>
-                        </tr>
+
                     </ng-container>
                     <ng-container *ngIf="_title === 'Upper Case Pipe'">
-                        <tr>
-                            <td>{{ name }}</td>
-                            <td> uppercase </td>
-                            <td>{{ name | uppercase }}</td>
-                        </tr>
+
                     </ng-container>
                     <ng-container *ngIf="_title === 'Title Case Pipe'">
-                        <tr>
-                            <td>{{ sentence }}</td>
-                            <td> titlecase </td>
-                            <td>{{ sentence | titlecase }}</td>
-                        </tr>
+
                     </ng-container>
                     <ng-container *ngIf="_title === 'Slice Pipe'">
-                        <tr>
-                            <td>{{ sentence }}</td>
-                            <td> slice : 1 </td>
-                            <td>{{ sentence | slice : 1 }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ sentence }}</td>
-                            <td> slice : 9 </td>
-                            <td>{{ sentence | slice : 9 }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ sentence }}</td>
-                            <td> slice : 100 </td>
-                            <td>{{ sentence | slice : 100 }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ sentence }}</td>
-                            <td> slice : 1 : 5 </td>
-                            <td>{{ sentence | slice : 1 : 5 }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ fruits }}</td>
-                            <td> slice : 1 : 3 </td>
-                            <td>{{ fruits | slice : 1 : 3 }}</td>
-                        </tr>
+
                     </ng-container>
                     <ng-container *ngIf="_title === 'Decimal Pipe'">
-                        <tr>
-                            <td>{{ human_population }}</td>
-                            <td> number </td>
-                            <td>{{ human_population | number }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ name }}</td>
-                            <td> number </td>
-                            <td>{{ name | number }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ human_population }}</td>
-                            <td> number:'15.0-6' </td>
-                            <td>{{ human_population | number:'15.0-6' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ human_population }}</td>
-                            <td> number:'15.6-6' </td>
-                            <td>{{ human_population | number:'15.6-6' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ e }}</td>
-                            <td> number:'.0-4' </td>
-                            <td>{{ e | number:'.0-4' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ e }}</td>
-                            <td> number:'.0-4':'en' </td>
-                            <td>{{ e | number:'.0-4':'en' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ human_population }}</td>
-                            <td> number:'':'es-mx' </td>
-                            <td>{{ human_population | number:'.0-4':'es-mx' }}</td>
-                        </tr>
+
                     </ng-container>
                     <ng-container *ngIf="_title === 'Percent Pipe'">
-                        <tr>
-                            <td>{{ savings }}</td>
-                            <td> percent </td>
-                            <td>{{ savings | percent:'.0-2' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ human_population }}</td>
-                            <td> percent </td>
-                            <td>{{ human_population | percent }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ human_population }}</td>
-                            <td> percent:'15.0-6' </td>
-                            <td>{{ human_population | percent:'15.0-6' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ human_population }}</td>
-                            <td> percent:'15.6-6' </td>
-                            <td>{{ human_population | percent:'15.6-6' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ e }}</td>
-                            <td> percent:'.0-4' </td>
-                            <td>{{ e | percent:'.0-4' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ e }}</td>
-                            <td> percent:'.0-4':'en' </td>
-                            <td>{{ e | percent:'.0-4':'en' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ human_population }}</td>
-                            <td> percent:'':'es-mx' </td>
-                            <td>{{ human_population | percent:'.0-4':'es-mx' }}</td>
-                        </tr>
+                        
                     </ng-container>
                     <ng-container *ngIf="_title === 'Currency Pipe'">
-                        <tr>
-                            <td>{{ salary }}</td>
-                            <td> currency </td>
-                            <td>{{ salary | currency }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ salary }}</td>
-                            <td> currency:'EUR' </td>
-                            <td>{{ salary | currency:'EUR' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ salary }}</td>
-                            <td> currency:'geld' </td>
-                            <td>{{ salary | currency:'geld' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ salary }}</td>
-                            <td> currency:'EUR':'code' </td>
-                            <td>{{ salary | currency:'EUR':'code' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ salary }}</td>
-                            <td> currency:'EUR':'symbol':'8.4-4' </td>
-                            <td>{{ salary | currency:'EUR':'symbol':'8.4-4' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ salary }}</td>
-                            <td> currency:'EUR':'symbol':'':'en' </td>
-                            <td>{{ salary | currency:'EUR':'symbol':'':'en' }}</td>
-                        </tr>
+
                     </ng-container>
                     <ng-container *ngIf="_title === 'Date Pipe'">
-                        <tr>
-                            <td>{{ today }}</td>
-                            <td> date </td>
-                            <td>{{ today | date }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ today }}</td>
-                            <td> date:'long' </td>
-                            <td>{{ today | date:'long' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ today }}</td>
-                            <td> date:'longTime' </td>
-                            <td>{{ today | date:'longTime' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ today }}</td>
-                            <td> date:'GGG-YYYY-MM-dd' </td>
-                            <td>{{ today | date:'GGG-YYYY-MM-dd' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ today }}</td>
-                            <td> date:'long':'GMT-9' </td>
-                            <td>{{ today | date:'long':'GMT-9' }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ today }}</td>
-                            <td> date:'long':'GMT-9' </td>
-                            <td>{{ today | date:'long':'GMT-9':'ar' }}</td>
-                        </tr>
+
                     </ng-container>
                     <ng-container *ngIf="_title === 'JSON Pipe'">
-                        <tr>
-                            <td>{{ employee }}</td>
-                            <td>  </td>
-                            <td>{{ employee }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ name }}</td>
-                            <td> json </td>
-                            <td>{{ name | json }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ employee }}</td>
-                            <td> json </td>
-                            <td>{{ employee | json }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ employee }}</td>
-                            <td> (Using &lt;pre&gt;) json </td>
-                            <td><pre> {{ employee | json }} </pre></td>
-                        </tr>
+
                     </ng-container>
                     <ng-container *ngIf="_title === 'Key Value Pipe'">
-                        <tr>
-                            <td>{{ name }}</td>
-                            <td> keyvalue </td>
-                            <td>{{ name | keyvalue }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ employee }}</td>
-                            <td> keyvalue </td>
-                            <td>
-                                <div *ngFor="let item of employee | keyvalue">
-                                    {{item.key}}:{{item.value}}
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>{{ employee }}</td>
-                            <td> keyvalue </td>
-                            <td>
-                                <div *ngFor="let item of employee | keyvalue:keyDescOrder">
-                                    {{item.key}}:{{item.value}}
-                                </div>
-                            </td>
-                        </tr>
+
                     </ng-container>
                     <ng-container *ngIf="_title === 'I18nSelectPipe'">
-                        <tr>
-                            <td> <input type="text" name="language" [(ngModel)]="language" /></td>
-                            <td> i18nSelect </td>
-                            <td>{{ language | i18nSelect:{'es': 'Buenos días',
-                                                            'de': 'Guten Tag',
-                                                            'zh': 'Ni Hao',
-                                                            'other': '👋'} }}</td>
-                        </tr>
+
                     </ng-container>
                     <ng-container *ngIf="_title === 'I18nPluralPipe'">
-                        <tr>
-                            <td> <input type="text" name="language" [(ngModel)]="language" /></td>
-                            <td> i18nPlural </td>
-                            <td>{{ language.length | i18nPlural:{'=0': 'Empty', '=1': 'One letter.', 'other': '# letters'} }}</td>
-                        </tr>
+
                     </ng-container>
                     <ng-container *ngIf="_title === 'Async Pipe'">
-                        <tr>
-                            <td> {{ currentTime }} </td>
-                            <td> async </td>
-                            <td>{{ currentTime | async}}</td>
-                        </tr>
-                        <tr>
-                            <td> {{ secondsInPage }} </td>
-                            <td> async </td>
-                            <td>{{ secondsInPage | async | number:'.0-0'}}</td>
-                        </tr>
+
                     </ng-container>
                     <ng-container *ngIf="_title === 'Custom Pipe'">
-                        <tr>
-                            <td>{{ sentence2 }}</td>
-                            <td> uwucase </td>
-                            <td>{{ sentence2 | uwucase }}</td>
-                        </tr>
-                        <tr>
-                            <td>{{ sentence2 }}</td>
-                            <td> uwucase:true </td>
-                            <td>{{ sentence2 | uwucase:true }}</td>
-                        </tr>
                         <tr>
                             <td>{{ url }}</td>
                             <td> safeUrl </td>
                             <td>                            
-                                <iframe width="560" height="315" [src]="url | safeUrl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/enB2QL9Ulus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </td>
                         </tr>
                     </ng-container>
