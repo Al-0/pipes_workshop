@@ -1,0 +1,11 @@
+.initial_text, .exercise {
+    padding-top: 100px;
+    padding-left: 90px;
+    padding-right: 90px;
+    background-image: url('./../../../assets/istockphoto-1262582928-612x612.jpeg');
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+p {
+    font-weight: 700;
+}
