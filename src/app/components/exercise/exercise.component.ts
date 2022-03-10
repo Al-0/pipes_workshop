@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { formatDate } from '@angular/common'; 
 
 @Component({
   selector: 'app-exercise',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ExerciseComponent implements OnInit {
 
   // Exercise variables
-  salute: string = "dear michelle,";
+  salute: string = "dear michelle";
   introduction: string = "It's been a while since we last spoke or saw one another";
   today: Date = new Date();
   age: number = 6.6;
@@ -31,6 +32,10 @@ export class ExerciseComponent implements OnInit {
         resolve(data[0].url);
       })
   })
+
+  format = 'mediumDate';
+  locale = 'en';
+  formattedDate = formatDate(this.today, this.format, this.locale);
 
   constructor() { }
 
