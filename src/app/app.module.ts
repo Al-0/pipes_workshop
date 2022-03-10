@@ -14,8 +14,6 @@ registerLocaleData(localeAr);
 import { AppComponent } from './app.component';
 import { ImpureTestPipe } from './pipes/impure-test.pipe';
 import { EntryComponent } from './components/entry/entry.component';
-import { UwucasePipe } from './pipes/uwucase.pipe';
-import { SafeUrlPipe } from './pipes/safe-url.pipe';
 import { ExerciseComponent } from './components/exercise/exercise.component';
 
 @NgModule({
@@ -23,8 +21,6 @@ import { ExerciseComponent } from './components/exercise/exercise.component';
     AppComponent,
     ImpureTestPipe,
     EntryComponent,
-    UwucasePipe,
-    SafeUrlPipe,
     ExerciseComponent
   ],
   imports: [
